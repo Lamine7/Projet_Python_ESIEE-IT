@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+# Définition d'une liste mixte
+world = ["Hello", "World", 123]
+print(world)
+
+# Modification de la variable 'world'
+world = 1
+print(world)
+
+world = "World"
+print(world)
+
+world = ["Hello", world, 123]
+print(world)

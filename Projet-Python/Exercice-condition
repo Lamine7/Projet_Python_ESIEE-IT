@@ -1,0 +1,33 @@
+def calculatrice():
+    try:
+        # Demander à l'utilisateur d'entrer les deux nombres
+        nombre1 = float(input("Entrez le premier nombre : "))
+        nombre2 = float(input("Entrez le deuxième nombre : "))
+
+        # Demander à l'utilisateur d'entrer un opérateur
+        operateur = input("Entrez un opérateur parmi +, -, *, / : ")
+
+        # Effectuer l'opération arithmétique en fonction de l'opérateur
+        if operateur == "+":
+            resultat = nombre1 + nombre2
+        elif operateur == "-":
+            resultat = nombre1 - nombre2
+        elif operateur == "*":
+            resultat = nombre1 * nombre2
+        elif operateur == "/":
+            if nombre2 != 0:
+                resultat = nombre1 / nombre2
+            else:
+                print("Erreur : Division par zéro non autorisée.")
+                return
+        else:
+            print("Erreur : Opérateur invalide. Veuillez entrer +, -, * ou /.")
+            return
+
+        # Afficher le résultat final
+        print(f"Le résultat de l'opération est : {resultat}")
+    except ValueError:
+        print("Erreur : Veuillez entrer des nombres valides.")
+
+# Appeler la fonction
+calculatrice()

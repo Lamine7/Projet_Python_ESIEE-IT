@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+
+# Liste des niveaux
+niveau = ["Bronze", "Argent", "Or"]
+
+# Supprimer "Argent" et insérer "Platine" à la position 1
+niveau.remove("Argent")
+niveau.insert(1, "Platine")
+
+# Créer un dictionnaire avec la clé 'rang'
+niveau_dict = {'rang': niveau}
+
+# Afficher le dictionnaire
+print(niveau_dict)
+
+# Ajouter et modifier une clé 'niveau'
+niveau_dict['niveau'] = 30
+niveau_dict['niveau'] = int(niveau_dict['niveau'] / 2)
+
+# Afficher le dictionnaire final
+print(niveau_dict)

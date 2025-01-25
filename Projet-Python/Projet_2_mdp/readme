@@ -1,0 +1,16 @@
+# Projet générateur et testeur de mot de passe
+
+Ce projet permet de générer des mots de passe et des passphrases tout en évaluant leur force selon les critères de l'ANSSI.
+
+1. Fonctionnalités
+    * Testeur de mot de passe basé sur l'entropie
+    * Générateur de mot de passe personnalisable
+    * Générateur de phrase de passe utilisant la méthode de dés EFF
+    * Mise en conformité avec les recommandations de l'ANSSI
+
+2. Recommandations ANSSI
+Ce projet respecte les recommandations de l'ANSSI en termes de politique de sécurité des mots de passe, incluant:
+    * Longueur minimale
+    * Complexité des mots de passe
+    * Conservation et gestion via un coffre-fort
+    * Utilisation de phrases de passe pour les comptes critiques
